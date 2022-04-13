@@ -88,195 +88,48 @@ h4 {
 
 header {
     display: flex;
-    justify-content: space-between;
     width: 100%;
+    height: 100px;
 }
 
     .header-logo {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        width: 7%;
-        margin: 20px 20px;
+        width: 25%;
+        margin: 30px 15px;
+
     }
 
     .header-logo img {
-        width: 100%;
+        width: 50%;
         height: 100%;
+        display: block;
+        margin: auto;
+        margin-left: 0%;
     }
 
-.header-nav-btn{
-    color:#0065FC;
-}
 
-
-/*Header Mediaquery iphone 768px*/
-
-@media screen and (max-width:768px){
-    h1 {
-        font-size: 20px;
-    }
-    
-    h2 {
-        font-size: 15px;
-        font-weight: normal;
-    }
-    
-    h3 {
-        font-weight: bold;
-        color: black;
-        font-size: 24px;
-    }
-    
-    h4 {
-        font-weight: bold;
-        color: black;
-        font-size: 22px;
-    }
-    
-    
-    .boxShadow {
-        box-shadow: 5px 5px 5px #F2F2F2;
-    }
-    
-    .spaceBetween{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .spaceAround {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-    
-    .gen-row-Between {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-    }
-    
-    .flexColumn {
-        display: flex;
-        flex-direction: column;
-    }
-    .column {
-        flex-direction: column;
-    }
-    
-    .borderRadius {
-        border-radius: 30px;
-    }
-    header {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-    }
-    
-        .header-logo {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            width: 7%;
-            margin: 20px 20px;
-        }
-    
-        .header-logo img {
-            width: 100%;
-            height: 100%;
-        }
-    
     .header-nav-btn{
-        color:#0065FC;
-    }
-}    
-
-/*Header Mediaquery tablette 1024px*/
-
-h1 {
-    font-size: 20px;
-}
-
-h2 {
-    font-size: 15px;
-    font-weight: normal;
-}
-
-h3 {
-    font-weight: bold;
-    color: black;
-    font-size: 24px;
-}
-
-h4 {
-    font-weight: bold;
-    color: black;
-    font-size: 22px;
-}
-
-.boxShadow {
-    box-shadow: 5px 5px 5px #F2F2F2;
-}
-
-.spaceBetween{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.spaceAround {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.gen-row-Between {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-}
-
-.flexColumn {
-    display: flex;
-    flex-direction: column;
-}
-.column {
-    flex-direction: column;
-}
-
-.borderRadius {
-    border-radius: 30px;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-    .header-logo {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        width: 7%;
-        margin: 20px 20px;
-    }
-
-    .header-logo img {
-        width: 100%;
-        height: 100%;
-    }
-
-.header-nav-btn{
     color:#0065FC;
+    display: block;
+
 }
+
+.header-container{
+    justify-content: space-between;
+}
+
+.header-btn-container{
+    width: 50%;
+    margin: 30px 15px;
+
+}
+
 
 
 /* Navigation */
 
 nav {
-    width: 90%;
+    width: 100%;
+    display: block;
 }
 
     nav ul {
@@ -855,15 +708,47 @@ footer{
     h3 {
     font-size: 20px;
     }
+
+
+
+
     header {
-    border-bottom: solid 1px rgb(204, 202, 202);
+        display: flex;
+        width: 100%;
+        height: 100px;
     }
+    
         .header-logo {
-        width: 16%;     
+            width: 25%;
+            margin: 30px 15px;
+    
         }
-        .header-nav-btn {
-        font-size: 20px;
+    
+        .header-logo img {
+            width: 50%;
+            height: 100%;
+            display: block;
+            margin: auto;
+            margin-left: 0%;
+        }
+    
+    
+        .header-nav-btn{
+        color:#0065FC;
+        display: block;
+    
     }
+    
+    .header-container{
+        flex-direction: column;
+    }
+    
+    .header-btn-container{
+        width: 50%;
+        margin: 30px 15px;
+    
+    }
+
     .booki-form-localisation, .booki-form-recherche, .booki-form-btn {
     font-size: 16px;
     }
@@ -876,6 +761,8 @@ footer{
 	}
                
 }
+
+
 
 @media screen and (max-width: 768px) {
     body {
