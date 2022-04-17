@@ -1,8 +1,10 @@
 body { 
     margin: 0px 40px;
-    font-family: 'Raleway', sans-serif;
+        
     font-size: 20px;
 }
+
+
 
 h1 {
     font-size: 20px;
@@ -105,20 +107,12 @@ header {
         height: 100%;
     }
 
-    .header-nav-btn{
-        color:#0065FC;
-    
-    }
-
-.header-container{
-    justify-content: space-between;
-    margin:0;
+.header-nav-btn{
+    color:#0065FC;
 }
 
 .header-btn-container{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
+    margin: 0;
 
 
 }
@@ -128,7 +122,7 @@ header {
 /* Navigation */
 
 nav {
-    width: 100%;
+    width: 90%;
 }
 
     nav ul {
@@ -150,12 +144,15 @@ nav {
     }
 
     .header-nav-btn:hover {
-        border-bottom: 3px solid #0065FC;
+        border-top: 3px solid #0065FC;
         color: #0065FC; 
     }
 
-
 /* Ajoutez le formulaire de recherche */
+
+.booki-form{
+    margin-bottom: 30px;
+}
 
 .booki-form h1 {
     margin-bottom: 10px;
@@ -174,6 +171,7 @@ nav {
         margin-right: -6px;
         border-radius: 15px 0px 0px 15px;
         border: 2px solid #F2F2F2;
+        background-color: rgb(242, 242, 242);
         font-family: 'Font Awesome 5 Free' 'Font Awesome 5 Brands';
     }
 
@@ -207,6 +205,7 @@ nav {
     display: flex;
     align-items: center;
     margin: 30px 0px;
+    margin-left: 10px;
 
 }
 
@@ -270,14 +269,15 @@ nav {
         align-items: center;
         background-color: white;
         border: 2px #deebff solid;
-        height: 26px;
-        width: 26px; 
+        height: 15px;
+        width: 15px; 
         border-radius: 25px;
         padding: 2px;
     }
 
     .booki-filtres-infocompl-texte {
         margin-left: 10px;
+        font-size: 15px;
         font-size: 15px;
     }
 
@@ -288,6 +288,8 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
+    height: 100%;
     padding-left: 0px;
     padding-right: 0px;
 }
@@ -308,14 +310,21 @@ nav {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: space-between;
-    margin: 25px;
+    margin-top: 0;
+    margin-left: 25px;
+    padding-top: 0;
+    padding-left: 20px;
+}
+
+a:visited {
+    text-decoration: none;
 }
 
 .hebergement-a-marseille {
-    padding-left: 20px;
-    padding-bottom: 10px;
-    box-sizing: content-box;
+    padding-left: 50px;
+    margin-top: 20px;
+    
+
 }
 
 .titre-hebergement p{
@@ -323,9 +332,10 @@ nav {
     height: 10%;
     box-sizing: content-box;
     text-align: left;
-    font-size: 1.2em;
+    font-size: 21px;
     font-weight: bold;
-    font-family: "Raleway";
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 0;
 }
 
 .item {
@@ -335,7 +345,7 @@ nav {
     align-content: center;
     width: 220px;
     height: 200px;
-    margin: 10px;
+    margin: 20px;
 }
 
 .item img {
@@ -349,6 +359,7 @@ nav {
     font-size: 15px;
     text-align: left;
     padding-left: 10px;
+    margin-top: 0;
     margin-bottom: 1%;
     margin-bottom: 5px;
 }
@@ -380,7 +391,7 @@ margin-bottom: 15px;
     align-items: flex-end;
     font-size: 1em;
     font-weight: bold;
-    font-family: "Raleway";
+    font-family: 'Raleway', sans-serif;
 }
 
 /* Section 2 les plus populaires */
@@ -391,10 +402,10 @@ margin-bottom: 15px;
     flex-direction: column;
     background-color: rgb(242, 242, 242);
     justify-content: center;
-    position: relative;
     width: 400px;
     height: 650px;
     border-radius: 20px 20px 20px 20px;
+    padding-right: 0;
 }
 
 .item2 {
@@ -410,25 +421,31 @@ margin-bottom: 15px;
 }
 
 .les-plus-populaires{
-    display: inline-block;
-    position: relative;
+    display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    position: relative;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-left: 10px;
+    font-family: 'Raleway', sans-serif;
 
+}
+
+.icon-box-item{
+
+margin-right: 10%;
+margin-top: 5%;
 }
 
 .titre-hebergement2{
     height: 50px;
     padding-left: 20px;
     font-size: 22px;
-    font-family: "Raleway";
+    font-family: 'Raleway', sans-serif;    
     font-weight: bold;
 
 }
 
-.chart{
-   
-}
 
 .items h1, p{
     display: flex;
@@ -436,9 +453,9 @@ margin-bottom: 15px;
 }
 
 .item2 h1{
-    font-size: 0.9em;
+    font-size: 15px;
     font-weight: bold;
-    font-family: "Raleway";
+    font-family: 'Raleway', sans-serif;    
 }
 
 .item2 p{
@@ -466,13 +483,13 @@ margin-bottom: 15px;
 .item2-text h1 {
     margin: 1px;
     padding: 2px;
-    font-family: "Raleway";
+    font-family: 'Raleway', sans-serif;
     font-size: 19px;
 }
 .item2-text p {
     margin: 1px;
     padding: 2px;
-    font-family: "Raleway";
+    font-family: 'Raleway', sans-serif;
 }
 
 .rating-box-item2{
@@ -491,7 +508,7 @@ height: 500px;
 
 .header3{
     font-size: 50px;
-    font-family: "Raleway";
+    font-family: 'Raleway', sans-serif;
 }
 
 .item-box3{
@@ -519,7 +536,7 @@ height: 500px;
 
 .vieux-port h3{
     font-size: 18px;
-    font-family: "raleway";
+    font-family: 'Raleway', sans-serif;
     padding-left: 20px;
     line-height: 10px;
 }
@@ -547,7 +564,7 @@ height: 500px;
 
 .fort-de-pomegues h3{
     font-size: 18px;
-    font-family: "raleway";
+    font-family: 'Raleway', sans-serif;
     padding-left: 20px;
     line-height: 10px;
 }
@@ -566,7 +583,7 @@ height: 500px;
 
 .iles-du-frioul h3{
     font-size: 18px;
-    font-family: "raleway";
+    font-family: 'Raleway', sans-serif;
     padding-left: 20px;
     line-height: 10px;
 }
@@ -587,7 +604,7 @@ height: 500px;
 
 .parc-national-des-calanques h3{
     font-size: 18px;
-    font-family: "raleway";
+    font-family: 'Raleway', sans-serif;
     padding-left: 20px;
     line-height: 10px;
 }
@@ -616,7 +633,7 @@ height: 500px;
 
 .notre-dame-de-la-garde h3{
     font-size: 18px;
-    font-family: "raleway";
+    font-family: 'Raleway', sans-serif;
     padding-left: 20px;
     line-height: 10px;
 }
@@ -634,7 +651,7 @@ height: 500px;
 
 .parc-longchamp h3{
     font-size: 18px;
-    font-family: "raleway";
+    font-family: 'Raleway', sans-serif;
     padding-left: 20px;
     line-height: 10px;
 }
@@ -668,7 +685,7 @@ footer{
 }
 
 .item-bloc h3{
-    font-family: "raleway";
+    font-family: 'Raleway', sans-serif;
     font-size: 20px;
 }
 
@@ -684,7 +701,7 @@ footer{
 
 .site {
     color : black;
-    font-family: "raleway";
+    font-family: 'Raleway', sans-serif;
     font-size: 18px;
     text-decoration: none;
 
@@ -697,7 +714,7 @@ footer{
 @media screen and (max-width: 992px) {
     body {
     font-size: 18px;
-    font-family: 'Raleway', sans-serif;
+        
     }
     h1 {
     font-size: 26px;
@@ -712,7 +729,7 @@ footer{
 
 
 
-
+/*
     header {
         display: flex;
         width: 100%;
@@ -756,7 +773,7 @@ footer{
 	margin-bottom: 10px;
 	}
                
-
+*/
 
 
 @media screen and (max-width: 768px) {
@@ -979,7 +996,7 @@ background-color: white;
     text-align: left;
     font-size: 1.5em;
     font-weight: bold;
-    font-family: "Raleway";
+    font-family: 'Raleway', sans-serif;
 }
 
 .item-box {
@@ -1046,7 +1063,7 @@ margin-bottom: 15px;
     align-items: flex-end;
     font-size: 1em;
     font-weight: bold;
-    font-family: "Raleway";
+    font-family: 'Raleway', sans-serif;
 }
 
 /* Section 2 les plus populaires */
@@ -1088,7 +1105,7 @@ margin-bottom: 15px;
     height: 50px;
     padding-left: 20px;
     font-size: 22px;
-    font-family: "Raleway";
+    font-family: 'Raleway', sans-serif;
     font-weight: bold;
 
 }
@@ -1105,7 +1122,7 @@ margin-bottom: 15px;
 .item2 h1{
     font-size: 0.9em;
     font-weight: bold;
-    font-family: "Raleway";
+    font-family: 'Raleway', sans-serif;
 }
 
 .item2 p{
@@ -1133,13 +1150,13 @@ margin-bottom: 15px;
 .item2-text h1 {
     margin: 1px;
     padding: 2px;
-    font-family: "Raleway";
+    font-family: 'Raleway', sans-serif;
     font-size: 19px;
 }
 .item2-text p {
     margin: 1px;
     padding: 2px;
-    font-family: "Raleway";
+    font-family: 'Raleway', sans-serif;
 }
 
 .rating-box-item2{
@@ -1162,7 +1179,7 @@ padding-left: 2px;
 
 .header3{
     font-size: 50px;
-    font-family: "Raleway";
+    font-family: 'Raleway', sans-serif;
 }
 
 .item-box3{
@@ -1189,7 +1206,7 @@ padding-left: 2px;
 
 .vieux-port h3{
     font-size: 18px;
-    font-family: "raleway";
+    font-family: 'Raleway', sans-serif;
     padding-left: 20px;
     line-height: 10px;
 }
@@ -1219,7 +1236,7 @@ padding-left: 2px;
 
 .fort-de-pomegues h3{
     font-size: 18px;
-    font-family: "raleway";
+    font-family: 'Raleway', sans-serif;
     padding-left: 20px;
     line-height: 10px;
 }
@@ -1241,7 +1258,7 @@ padding-left: 2px;
 
 .iles-du-frioul h3{
     font-size: 18px;
-    font-family: "raleway";
+    font-family: 'Raleway', sans-serif;
     padding-left: 20px;
     line-height: 10px;
 }
@@ -1265,7 +1282,7 @@ padding-left: 2px;
 
 .parc-national-des-calanques h3{
     font-size: 18px;
-    font-family: "raleway";
+    font-family: 'Raleway', sans-serif;
     padding-left: 20px;
     line-height: 10px;
 }
@@ -1295,7 +1312,7 @@ padding-left: 2px;
 
 .notre-dame-de-la-garde h3{
     font-size: 18px;
-    font-family: "raleway";
+    font-family: 'Raleway', sans-serif;
     padding-left: 20px;
     line-height: 10px;
 }
@@ -1313,7 +1330,7 @@ padding-left: 2px;
 
 .parc-longchamp h3{
     font-size: 18px;
-    font-family: "raleway";
+    font-family: 'Raleway', sans-serif;
     padding-left: 20px;
     line-height: 10px;
 }
@@ -1351,7 +1368,7 @@ footer{
 }
 
 .item-bloc h3{
-    font-family: "raleway";
+    font-family: 'Raleway', sans-serif;
     font-size: 20px;
 }
 
@@ -1368,7 +1385,7 @@ footer{
 
 .site {
     color : black;
-    font-family: "raleway";
+    font-family: 'Raleway', sans-serif;
     font-size: 18px;
     text-decoration: none;
 
