@@ -88,38 +88,38 @@ h4 {
 
 header {
     display: flex;
+    justify-content: space-between;
     width: 100%;
-    height: 100px;
 }
 
     .header-logo {
-        width: 25%;
-        margin: 30px 15px;
-
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 7%;
+        margin: 20px 20px;
     }
 
     .header-logo img {
-        width: 50%;
+        width: 100%;
         height: 100%;
-        display: block;
-        margin: auto;
-        margin-left: 0%;
     }
 
-
     .header-nav-btn{
-    color:#0065FC;
-    display: block;
-
-}
+        color:#0065FC;
+    
+    }
 
 .header-container{
     justify-content: space-between;
+    margin:0;
 }
 
 .header-btn-container{
-    width: 50%;
-    margin: 30px 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+
 
 }
 
@@ -129,7 +129,6 @@ header {
 
 nav {
     width: 100%;
-    display: block;
 }
 
     nav ul {
@@ -151,7 +150,7 @@ nav {
     }
 
     .header-nav-btn:hover {
-        border-top: 3px solid #0065FC;
+        border-bottom: 3px solid #0065FC;
         color: #0065FC; 
     }
 
@@ -163,7 +162,7 @@ nav {
 }
 
     .booki-form p {
-        margin-top: 0px;
+        margin-bottom: 0px;
     }
 
     .booki-form-localisation, .booki-form-recherche, .booki-form-btn {
@@ -180,7 +179,7 @@ nav {
 
     .booki-form-recherche {
         border: 2px solid #F2F2F2;
-        width: 15%;
+        width: 25%%;
     }
 
     .booki-form-btn {
@@ -193,6 +192,7 @@ nav {
 
         .booki-form-btn-responsive {
             display: none;
+
         }
 
         ::placeholder{
@@ -314,7 +314,7 @@ nav {
 
 .hebergement-a-marseille {
     padding-left: 20px;
-    padding-top: 10px;
+    padding-bottom: 10px;
     box-sizing: content-box;
 }
 
@@ -349,7 +349,7 @@ nav {
     font-size: 15px;
     text-align: left;
     padding-left: 10px;
-    margin-top: 1%;
+    margin-bottom: 1%;
     margin-bottom: 5px;
 }
 
@@ -357,7 +357,7 @@ nav {
     font-size: 12px;
     text-align: left;
     padding-left: 10px;
-    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .rating-box-item1{
@@ -445,7 +445,7 @@ margin-bottom: 15px;
     font-size: 0.7em;
     text-align: left;
     padding-left: 10px;
-    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .item2 img {
@@ -485,7 +485,7 @@ padding-left: 2px;
 /* Activités à Marseille*/
 
 .main-box3{
-padding-top: 30px;
+padding-bottom: 30px;
 height: 500px;
 }
 
@@ -645,8 +645,8 @@ height: 500px;
 footer{
     flex-shrink: 0;
     width: 100%;
-    padding-top: 0px;
-    margin-top: 60px;
+    padding-bottom: 0px;
+    margin-bottom: 60px;
 
 
 }
@@ -693,14 +693,15 @@ footer{
 
   * Responsive design - media queries */
 
-
+/**/
 @media screen and (max-width: 992px) {
     body {
     font-size: 18px;
+    font-family: 'Raleway', sans-serif;
     }
     h1 {
     font-size: 26px;
-    margin-top: 40px;
+    margin-bottom: 40px;
     }
     h2 {
     font-size: 26px;
@@ -719,19 +720,14 @@ footer{
     }
     
         .header-logo {
-            width: 25%;
-            margin: 30px 15px;
-    
+            display: block;
         }
     
         .header-logo img {
-            width: 50%;
-            height: 100%;
-            display: block;
-            margin: auto;
-            margin-left: 0%;
+
+
         }
-    
+    }
     
         .header-nav-btn{
         color:#0065FC;
@@ -753,14 +749,13 @@ footer{
     font-size: 16px;
     }
     .booki-filtres {
-    margin-top: 50px;
+    margin-bottom: 50px;
     flex-wrap: wrap;
     }
 	.booki-filtres-btn {
 	margin-bottom: 10px;
 	}
                
-}
 
 
 
@@ -772,61 +767,104 @@ footer{
         font-size: 14px;
         margin: 0px;
         }
+        .header-container{
+            display: flex;
+            height: 100px;
+
+        }
+        .header-logo{
+            width: 100%;
+            height:50px;
+
+        }
+        .header-logo img{
+            width: 100%;
+            height:50px;
+            object-fit: contain;
+        }
+
         .booki-form, .booki-filtres, .booki-filtres-infocompl{
         padding: 10px 20px;
         }
         h1 {
-        font-size: 22px;
+        font-size: 20px;
         display: flex;
         flex-wrap: wrap;
+        font-weight:bolder;
         }
         h2 {
-        font-size: 22px;
+        font-size: 15px;
         display: flex;
         flex-wrap: wrap;
         }
         h3, h4 {
         font-size: 16px;
         }
-    
+.header-container{
+    display: inline-block;
+    flex-direction: column;
+}
+
+        .header-btn-container{
+            width: 100%;
+            padding-top: 2%;
+            margin: auto;
+            display: flex;
+
+        
+        }
         .header-logo {
         width: 30%;     
         }
         nav {
         width: 100%;
+        
         }
         nav ul {
         justify-content: space-around;
-        height: 80px;
-        padding: 0;
+        height: 40px;
+        padding-left: 0%;
+        text-decoration-color: #0065FC;
+
+        position: relative;
         }
             nav li {
             width: 50%;
             border-bottom: 3px solid #F2F2F2;
+            align-items: flex-start;
+            
+            
             }
             .header-nav-btn {
             justify-content: center;
-            font-size: 18px;
+            font-size: 16px;
             }
             .header-nav-btn:hover {
-            border-top: 0px solid #0065FC;
+            border-bottom: 0px solid #0065FC;
             }
             nav li:hover {
             border-bottom: 3px solid #0065FC;
-            border-top: 0;
+            border-bottom: 0;
             color: #0065FC; 
             }
+
     form {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin-top: 30px;
+
+    }
+    .booki-form-localisation{
+        background-color: rgb(242, 242, 242);
     }
         .booki-form-recherche {
-        width: 60%;
+        max-width: 100%;
+        height: 30%;
         }
         .booki-form-btn {
-        display: none;
+            display: none;
+
         }
         .booki-form-btn-responsive {
         display: flex;
@@ -837,6 +875,8 @@ footer{
         height: 50px;
         width: 50px;
         border: 2px solid #0065FC;
+        background-color: #0065FC;
+        color:white;
         }
     .booki-filtres {
     flex-flow: row wrap;
@@ -858,3 +898,478 @@ footer{
 }
 
 
+/* FIlTRES */
+
+.booki-filtres{
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.booki-filtres h3{
+    font-weight: bold;
+}
+
+
+
+.booki-filtres-infocompl {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+    .booki-filtres-infocompl-icone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border: 2px #deebff solid;
+        height: 15px;
+        width: 15px; 
+        font-size: 15px;
+        border-radius: 25px;
+        padding: 2px;
+    }
+
+    .booki-filtres-infocompl-texte {
+        margin-left: 10px;
+        font-size: 15px;
+        word-wrap: break-word;
+    }
+
+
+
+
+   /*Formulaire Card*/
+
+
+   .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.main-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+background-color: white;
+    width: 400px;
+    height: 100%;
+    order: 2;
+    margin-top: 5%;
+}
+
+/* Hebergements à Marseille*/
+
+
+.hebergement-a-marseille {
+    padding-left: 20px;
+    box-sizing: content-box;
+}
+
+.titre-hebergement p{
+    width: 100%;
+    height: 10%;
+    box-sizing: content-box;
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: "Raleway";
+}
+
+.item-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-top: 5%;
+    margin-left: 0;
+
+}
+
+
+.item {
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: #deebff;
+    align-content: center;
+    width: 280px;
+    height: 200px;
+
+}
+
+.item img {
+    border-radius: 30px 30px 0px 0px;
+    border: 1px solid white;
+    padding: 2px;
+    background-color: white;
+    width: 280px;
+    height: 120px;
+}
+
+.item h1 {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 10px;
+    margin-top: 0;
+}
+
+.item p {
+    font-size: 12px;
+    text-align: left;
+    padding-left: 10px;
+    margin-top: 0;
+    margin-bottom: 1%;
+}
+
+.rating-box-item1{
+display: flex;
+align-items: flex-start;
+padding-left: 10px;
+margin-bottom: 15px;
+}
+
+
+.item-rating{
+    color: rgb(42,99,243) ;
+    
+}
+
+
+.afficher-plus p{
+    box-sizing: content-box;
+    padding-left: 20px;
+    align-items: flex-end;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: "Raleway";
+}
+
+/* Section 2 les plus populaires */
+
+
+.main-box2 {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(242, 242, 242);
+    justify-content: center;
+    position: relative;
+    width: 400px;
+    height: 650px;
+    border-radius: 20px 20px 20px 20px;
+    order: 1;
+}
+
+.item2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center ;
+    background-color: white;
+    width: 365px;
+    height: 160px;
+    border-radius: 20px 20px 20px 20px;
+    margin: 20px;
+}
+
+.les-plus-populaires{
+    display: inline-block;
+    position: relative;
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
+
+.titre-hebergement2{
+    height: 50px;
+    padding-left: 20px;
+    font-size: 22px;
+    font-family: "Raleway";
+    font-weight: bold;
+
+}
+
+.chart{
+   
+}
+
+.items h1, p{
+    display: flex;
+
+}
+
+.item2 h1{
+    font-size: 0.9em;
+    font-weight: bold;
+    font-family: "Raleway";
+}
+
+.item2 p{
+    font-size: 0.7em;
+    text-align: left;
+    padding-left: 10px;
+    margin-bottom: 0px;
+}
+
+.item2 img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px 0px 0px 20px;
+    padding-left: 10px;
+
+}
+
+.item2-text{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-left: 15px;
+    padding-bottom: 60px;
+}
+.item2-text h1 {
+    margin: 1px;
+    padding: 2px;
+    font-family: "Raleway";
+    font-size: 19px;
+}
+.item2-text p {
+    margin: 1px;
+    padding: 2px;
+    font-family: "Raleway";
+}
+
+.rating-box-item2{
+display: flex;
+align-items: flex-start;
+padding-left: 2px;
+
+}
+
+/* Activités à Marseille*/
+
+.main-box3{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-bottom: 30px;
+    width: 400px;
+    height: 100%;
+}
+
+.header3{
+    font-size: 50px;
+    font-family: "Raleway";
+}
+
+.item-box3{
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10%;
+    height: 100%;
+}
+
+.item3-partie1{
+    border-radius: 30px 30px 30px 30px;
+    width: 280px;
+    height: 120px;
+    margin-bottom: 15%;
+}
+
+
+.vieux-port img{
+    width: 280px;
+    height: 120px;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.vieux-port h3{
+    font-size: 18px;
+    font-family: "raleway";
+    padding-left: 20px;
+    line-height: 10px;
+}
+
+.item3-partie2{
+    width: 280px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+
+
+
+}
+.fort-de-pomegues{
+    border: 1px solid  rgb(242, 242, 242);
+    box-shadow: 1px 1px 1px 1px  rgb(242, 242, 242);
+    border-radius: 30px 30px 30px 30px;
+    margin-bottom: 5%;
+
+}
+.fort-de-pomegues img{
+    width: 280px;
+    height: 120px;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.fort-de-pomegues h3{
+    font-size: 18px;
+    font-family: "raleway";
+    padding-left: 20px;
+    line-height: 10px;
+}
+
+.iles-du-frioul{
+    border: 1px solid  rgb(242, 242, 242);
+    box-shadow: 1px 1px 1px 1px  rgb(242, 242, 242);
+    border-radius: 30px 30px 30px 30px;
+    width: 280px;
+    height: 120px;
+    
+}
+
+.iles-du-frioul img{
+    width: 280px;
+    height: 120px;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.iles-du-frioul h3{
+    font-size: 18px;
+    font-family: "raleway";
+    padding-left: 20px;
+    line-height: 10px;
+}
+
+.item3-partie3{
+    border: 1px solid  rgb(242, 242, 242);
+    box-shadow: 1px 1px 1px 1px  rgb(242, 242, 242);
+    border-radius: 30px 30px 30px 30px;
+    width: 280px;
+    height: 120px;
+
+    margin-bottom: 15%;
+
+}
+
+.parc-national-des-calanques img{
+    width: 280px;
+    height: 120px;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.parc-national-des-calanques h3{
+    font-size: 18px;
+    font-family: "raleway";
+    padding-left: 20px;
+    line-height: 10px;
+}
+
+
+.item3-partie4{
+    width: 280px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.notre-dame-de-la-garde{
+    border: 1px solid  rgb(242, 242, 242);
+    box-shadow: 1px 1px 1px 1px  rgb(242, 242, 242);
+    border-radius: 30px 30px 30px 30px;
+    margin-bottom: 5%;
+}
+
+.notre-dame-de-la-garde img{
+    width: 280px;
+    height: 120px;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.notre-dame-de-la-garde h3{
+    font-size: 18px;
+    font-family: "raleway";
+    padding-left: 20px;
+    line-height: 10px;
+}
+.parc-longchamp {
+    border: 1px solid rgb(242, 239, 239);
+    box-shadow: 1px 1px 1px 1px rgb(242, 239, 239);
+    border-radius: 30px 30px 30px 30px;
+
+}
+.parc-longchamp img{
+    width: 280px;
+    height: 120px;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.parc-longchamp h3{
+    font-size: 18px;
+    font-family: "raleway";
+    padding-left: 20px;
+    line-height: 10px;
+}
+
+
+
+
+
+/*Footer*/
+
+footer{
+    flex-shrink: 0;
+    width: 100%;
+    padding-bottom: 0px;
+    margin-bottom: 60px;
+
+}
+
+.contenu-footer{
+    width: 300px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    font-size: 20px;
+    padding: 20px;
+    background-color: rgb(242, 242, 242);
+}
+
+.item-bloc{
+    width: 100%;
+    margin: 0px;
+    padding: 10px;
+}
+
+.item-bloc h3{
+    font-family: "raleway";
+    font-size: 20px;
+}
+
+.item-bloc ul{
+    list-style-type: none;
+    padding-inline-start: 0%;
+    font-size: normal;
+
+}
+.item-bloc li{
+
+    padding: 5px 0px;
+}
+
+.site {
+    color : black;
+    font-family: "raleway";
+    font-size: 18px;
+    text-decoration: none;
+
+  }
