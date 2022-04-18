@@ -1,6 +1,5 @@
 body { 
     margin: 0px 40px;
-        
     font-size: 20px;
 }
 
@@ -172,12 +171,12 @@ nav {
         border-radius: 15px 0px 0px 15px;
         border: 2px solid #F2F2F2;
         background-color: rgb(242, 242, 242);
-        font-family: 'Font Awesome 5 Free' 'Font Awesome 5 Brands';
+
     }
 
     .booki-form-recherche {
         border: 2px solid #F2F2F2;
-        width: 25%%;
+        width: 25%;
     }
 
     .booki-form-btn {
@@ -706,9 +705,9 @@ footer{
   }
 
 
-  * Responsive design - media queries */
+  /* Responsive design - media queries */
 
-/**/
+
 @media screen and (max-width: 992px) {
     body {
     font-size: 18px;
@@ -817,7 +816,7 @@ footer{
         flex-wrap: wrap;
         flex-direction:row;
         padding-left: 0px;
-        padding-right: 0px;
+
     }
     
     .main-box {
@@ -825,8 +824,9 @@ footer{
         flex-direction: row;
         justify-content: flex-start;
         background-color: white;
-        width: 700px;
+        width: 550px;
         height: 100%;
+        padding-left: 0;
         background-color: rgb(242, 242, 242);
     }
     
@@ -835,6 +835,7 @@ footer{
     
     .hebergement-a-marseille {
         margin-top: 0;
+        padding-left: 25px;
 
     }
     
@@ -854,6 +855,7 @@ footer{
         align-content: center;
         margin-top: %;
         margin-left: 0;
+        padding: 0 0;
     
     }
     
@@ -862,7 +864,7 @@ footer{
         border-radius: 30px 30px 30px 30px;
         box-shadow: #deebff;
         align-content: center;
-        width: 280px;
+        width: 230px;
         height: 200px;
     
     }
@@ -872,7 +874,7 @@ footer{
         border: 1px solid white;
         padding: 2px;
         background-color: white;
-        width: 280px;
+        width: 230px;
         height: 120px;
     }
     
@@ -925,8 +927,9 @@ footer{
         justify-content: center;
         position: relative;
         width: 350px;
-        height: 650px;
+        height: 750px;
         border-radius: 20px 20px 20px 20px;
+        margin-left: 10px;
     }
     
     .item2 {
@@ -938,16 +941,24 @@ footer{
         width: 325px;
         height: 160px;
         border-radius: 20px 20px 20px 20px;
-        margin: 20px;
-    }
+        margin-top: 50px;
+        margin-left: 10px;
+        }
 
     
     .les-plus-populaires{
         display: flex;
-        height: 20px;
         flex-direction: row;
-        position: relative;
+        height: 40px;
+        margin-top: 0;
+        padding-left: 5px;
+        
+    }
 
+    .les-plus-populaires p{
+        font-size: 25px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
     }
     
     .titre-hebergement2{
@@ -955,17 +966,19 @@ footer{
         box-sizing: content-box;
         height: 50px;
         padding-left: 20px;
-        font-size: 22px;
-        font-family: 'Raleway', sans-serif;
-        font-weight: bold;
+        padding-top: 0;
     
     }
     
-.icon-box-item{
-    display: inline-block;
-    box-sizing: content-box;
-}
+    .icon-box-item{
+        display: inline-block;
+        box-sizing: content-box;
+        padding-top: 15px;
+    }
 
+    .item-box2{
+        height: 700px;    
+    }
     .items h1, p{
         display: flex;
     
@@ -1033,12 +1046,17 @@ footer{
         background-color: rgb(242, 242, 242);
     }
     
-    .header3{
-        font-size: 50px;
+    .header3 h1{
+        font-size: 25px;
+        font-weight: bold;
         font-family: 'Raleway', sans-serif;
         padding: 20px;
     }
     
+    .header3{
+        padding-left: 20px;
+    }
+
     .item-box3{
     
         display: flex;
@@ -1051,14 +1069,22 @@ footer{
     
     .item3-partie1{
         border-radius: 30px 30px 30px 30px;
-        width: 280px;
+        width: 200px;
         height: 120px;
         margin-top: 10%;
     }
     
+    .vieux-port{
+        border: 1px solid rgb(242, 239, 239);
+        box-shadow: 1px 1px 1px 1px rgb(242, 239, 239);
+        border-radius: 30px 30px 30px 30px;
+        background-color: white;
+        height: 180px;
+        border-radius: 30px 30px 30px 30px;
+    }
     
     .vieux-port img{
-        width: 280px;
+        width: 200px;
         height: 120px;
         border-radius: 30px 30px 0px 0px;
     }
@@ -1067,11 +1093,11 @@ footer{
         font-size: 18px;
         font-family: 'Raleway', sans-serif;
         padding-left: 20px;
-        line-height: 10px;
+        margin-top: 20px;
     }
     
     .item3-partie2{
-        width: 280px;
+        width: 200px;
         height: 400px;
         display: flex;
         flex-direction: column;
@@ -1080,14 +1106,17 @@ footer{
     
     }
     .fort-de-pomegues{
+        background-color: white;
+        height: 180px;
         border: 1px solid  rgb(242, 242, 242);
         box-shadow: 1px 1px 1px 1px  rgb(242, 242, 242);
         border-radius: 30px 30px 30px 30px;
         margin-bottom: 5%;
-    
+    }
+
     }
     .fort-de-pomegues img{
-        width: 280px;
+        width: 200px;
         height: 120px;
         border-radius: 30px 30px 0px 0px;
     }
@@ -1095,21 +1124,21 @@ footer{
     .fort-de-pomegues h3{
         font-size: 18px;
         font-family: 'Raleway', sans-serif;
-        padding-left: 20px;
-        line-height: 10px;
+        margin-top: 20px;
     }
     
     .iles-du-frioul{
         border: 1px solid  rgb(242, 242, 242);
         box-shadow: 1px 1px 1px 1px  rgb(242, 242, 242);
         border-radius: 30px 30px 30px 30px;
-        width: 280px;
-        height: 120px;
+        width: 200px;
+        height: 180px;
+        background-color: white;
         
     }
     
     .iles-du-frioul img{
-        width: 280px;
+        width: 200px;
         height: 120px;
         border-radius: 30px 30px 0px 0px;
     }
@@ -1118,21 +1147,30 @@ footer{
         font-size: 18px;
         font-family: 'Raleway', sans-serif;
         padding-left: 20px;
-        line-height: 10px;
+        margin-top: 20px;
     }
     
     .item3-partie3{
         border: 1px solid  rgb(242, 242, 242);
         box-shadow: 1px 1px 1px 1px  rgb(242, 242, 242);
         border-radius: 30px 30px 30px 30px;
-        width: 280px;
+        width: 200px;
         height: 120px;
         margin-top: 10%;
     
     }
-    
+
+    .parc-national-des-calanques{
+        border: 1px solid  rgb(242, 242, 242);
+        box-shadow: 1px 1px 1px 1px  rgb(242, 242, 242);
+        border-radius: 30px 30px 30px 30px;
+        width: 200px;
+        height: 180px;
+        background-color: white;
+        
+    }
     .parc-national-des-calanques img{
-        width: 280px;
+        width: 200px;
         height: 120px;
         border-radius: 30px 30px 0px 0px;
     }
@@ -1140,18 +1178,17 @@ footer{
     .parc-national-des-calanques h3{
         font-size: 18px;
         font-family: 'Raleway', sans-serif;
+        margin-top: 10px;
         padding-left: 20px;
-        line-height: 10px;
+        line-height: 15px;
     }
     
     
     .item3-partie4{
-        width: 280px;
+        width: 200px;
         height: 400px;
         display: flex;
         flex-direction: column;
-    
-    
     }
     
     .notre-dame-de-la-garde{
@@ -1159,10 +1196,12 @@ footer{
         box-shadow: 1px 1px 1px 1px  rgb(242, 242, 242);
         border-radius: 30px 30px 30px 30px;
         margin-bottom: 5%;
+        background-color: white;
+        height: 180px;
     }
     
     .notre-dame-de-la-garde img{
-        width: 280px;
+        width: 200px;
         height: 120px;
         border-radius: 30px 30px 0px 0px;
     }
@@ -1171,16 +1210,19 @@ footer{
         font-size: 18px;
         font-family: 'Raleway', sans-serif;
         padding-left: 20px;
-        line-height: 10px;
+        line-height: 15px;
+        margin-top: 10px;
     }
     .parc-longchamp {
         border: 1px solid rgb(242, 239, 239);
         box-shadow: 1px 1px 1px 1px rgb(242, 239, 239);
         border-radius: 30px 30px 30px 30px;
+        height: 180px;
+        background-color: white;
     
     }
     .parc-longchamp img{
-        width: 280px;
+        width: 200px;
         height: 120px;
         border-radius: 30px 30px 0px 0px;
     }
@@ -1190,6 +1232,7 @@ footer{
         font-family: 'Raleway', sans-serif;
         padding-left: 20px;
         line-height: 10px;
+        margin-top: 20px;
     }
     
     
@@ -1228,6 +1271,7 @@ footer{
     .item-bloc h3{
         font-family: 'Raleway', sans-serif;
         font-size: 20px;
+        font-weight: bold;
     }
     
     .item-bloc ul{
@@ -1257,95 +1301,91 @@ footer{
 
 /* Reponsive design pour l'écran 768px*/
 
-@media screen and (max-width: 768px) {
-    body {
+@media screen and (max-width: 768px){
+
+body {
     margin: 0px 0px;
-    }
-        main {
-        font-size: 14px;
-        margin: 0px;
-        }
-        .header-container{
-            display: flex;
-            height: 100px;
-
-        }
-        .header-logo{
-            width: 100%;
-            height:50px;
-
-        }
-        .header-logo img{
-            width: 100%;
-            height:50px;
-            object-fit: contain;
-        }
-
-        .booki-form, .booki-filtres, .booki-filtres-infocompl{
-        padding: 10px 20px;
-        }
-        h1 {
-        font-size: 20px;
-        display: flex;
-        flex-wrap: wrap;
-        font-weight:bolder;
-        }
-        h2 {
-        font-size: 15px;
-        display: flex;
-        flex-wrap: wrap;
-        }
-        h3, h4 {
-        font-size: 16px;
-        }
-.header-container{
-    display: inline-block;
-    flex-direction: column;
 }
 
-        .header-btn-container{
-            width: 100%;
-            padding-top: 2%;
-            margin: auto;
-            display: flex;
+h1 {
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight:bolder;
+    }
+h2 {
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+h3, h4 {
+    font-size: 16px;
+}
 
-        
-        }
-        .header-logo {
-        width: 30%;     
-        }
-        nav {
-        width: 100%;
-        
-        }
-        nav ul {
-        justify-content: space-around;
-        height: 40px;
-        padding-left: 0%;
-        text-decoration-color: #0065FC;
+.header-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100px;
 
-        position: relative;
-        }
-            nav li {
-            width: 50%;
-            border-bottom: 3px solid #F2F2F2;
-            align-items: flex-start;
-            
-            
-            }
-            .header-nav-btn {
-            justify-content: center;
-            font-size: 16px;
-            }
-            .header-nav-btn:hover {
-            border-bottom: 0px solid #0065FC;
-            }
-            nav li:hover {
-            border-bottom: 3px solid #0065FC;
-            border-bottom: 0;
-            color: #0065FC; 
-            }
+}
+.header-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 7%;
+    margin: 20px 20px;
+}
 
+.header-logo img {
+    width: 100%;
+    height: 100%;
+}
+.header-btn-container{
+    display: flex;
+    width: 100%;
+    padding-top: 2%;
+    margin: auto;
+}
+
+.booki-form, .booki-filtres, .booki-filtres-infocompl{
+padding: 10px 20px;
+}
+
+nav {
+width: 100%;
+
+}
+    nav ul {
+    justify-content: space-around;
+    height: 40px;
+    padding-left: 0%;
+    text-decoration-color: #0065FC;
+    position: relative;
+    }
+
+    nav li {
+    width: 50%;
+    border-bottom: 3px solid #F2F2F2;
+    align-items: flex-start;
+    }
+
+.header-nav-btn {
+justify-content: center;
+font-size: 16px;
+}
+.header-nav-btn:hover {
+border-bottom: 0px solid #0065FC;
+}
+nav li:hover {
+border-bottom: 3px solid #0065FC;
+border-bottom: 0;
+color: #0065FC; 
+}
+
+.booki-form h1{
+    font-size: 20px;
+}
     form {
     display: flex;
     justify-content: flex-start;
@@ -1359,9 +1399,10 @@ footer{
         .booki-form-recherche {
         max-width: 100%;
         height: 30%;
+        display: none;
         }
         .booki-form-btn {
-            display: none;
+        display: none;
 
         }
         .booki-form-btn-responsive {
@@ -1491,7 +1532,7 @@ background-color: white;
 
 .item {
     border-radius: 30px 30px 30px 30px;
-    box-shadow: #deebff;
+    box-shadow: white;
     align-content: center;
     width: 280px;
     height: 200px;
@@ -1854,7 +1895,7 @@ footer{
 .item-bloc ul{
     list-style-type: none;
     padding-inline-start: 0%;
-    font-size: normal;
+    font-size:medium;
 
 }
 .item-bloc li{
